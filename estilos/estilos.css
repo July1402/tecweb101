@@ -1,0 +1,254 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.nav-bar {
+    background-color: #34495e;
+    width: 50px; /* Contraída por defecto */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.nav-bar:hover {
+    width: 250px; /* Se expande al pasar el puntero */
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin-top: 10%;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+.nav-bar ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-bar ul li a span {
+    display: none; /* Ocultar texto */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Mostrar el texto solo cuando esté expandido */
+.nav-bar:hover ul li a span {
+    display: inline-block;
+    opacity: 1;
+}
+
+/* Main Content */
+.main-container {
+    margin-left: 50px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.nav-bar:hover ~ .main-container {
+    margin-left: 250px;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-container {
+    margin-left: 50px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    background-color: #ecf0f1; /* Fondo suave para el contenedor principal */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para el contenedor de imágenes */
+.image-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Estilos para las imágenes dentro del contenedor */
+.image-box-item {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+
+div.content{
+    margin-right: 25%;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #ffffff; /* Fondo blanco para cada sección */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+section h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: #7f8c8d;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section ul li {
+    padding: 8px 0;
+    font-size: 16px;
+    color: #34495e;
+}
+
+section ul li strong {
+    font-weight: bold;
+}
+
+/* Video Section */
+.videos-section iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Aside (Form Section) */
+.contact-form-section {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.contact-form-section h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #34495e;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #34495e;
+}
+
+.contact-form button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #34495e;
+}
+
+/* Contact Table */
+.contact-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.contact-table th, .contact-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+    color: #34495e;
+}
+
+.contact-table th {
+    background-color: #ecf0f1;
+    font-weight: bold;
+}
+
+.contact-table a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.contact-table a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
