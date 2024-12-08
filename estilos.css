@@ -1,0 +1,13 @@
+body{
+    background-color: blueviolet;
+}
+h1{
+    font-size: 3em;
+    color: beige;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+p {
+    color: black;
+    font-size: large2em;
+}
